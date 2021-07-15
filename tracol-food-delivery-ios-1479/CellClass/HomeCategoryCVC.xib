@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCategoryCVC" id="gTV-IL-0wX" customClass="HomeCategoryCVC" customModule="Tracol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSr-wI-g0v">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_fruit" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-4I-meu">
+                                <rect key="frame" x="34" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DTi-nh-0Hj"/>
+                                    <constraint firstAttribute="width" constant="50" id="JxA-Bh-lkp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-wx-slK">
+                                <rect key="frame" x="4" y="60" width="110" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95372158288955688" green="0.95667999982833862" blue="0.97382789850234985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Fn-4I-meu" firstAttribute="centerX" secondItem="pSr-wI-g0v" secondAttribute="centerX" id="0dh-gV-Dga"/>
+                            <constraint firstAttribute="trailing" secondItem="Hvx-wx-slK" secondAttribute="trailing" constant="4" id="M4r-Qa-yQc"/>
+                            <constraint firstItem="Hvx-wx-slK" firstAttribute="top" secondItem="6Fn-4I-meu" secondAttribute="bottom" constant="2" id="PQq-Ik-ZrB"/>
+                            <constraint firstItem="6Fn-4I-meu" firstAttribute="centerY" secondItem="pSr-wI-g0v" secondAttribute="centerY" constant="-15" id="iva-Z5-2jh"/>
+                            <constraint firstItem="Hvx-wx-slK" firstAttribute="leading" secondItem="pSr-wI-g0v" secondAttribute="leading" constant="4" id="qTS-7t-aEj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pSr-wI-g0v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E4P-ic-KZq"/>
+                <constraint firstAttribute="bottom" secondItem="pSr-wI-g0v" secondAttribute="bottom" id="HEG-Sk-WZC"/>
+                <constraint firstItem="pSr-wI-g0v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WUt-Kb-m1g"/>
+                <constraint firstAttribute="trailing" secondItem="pSr-wI-g0v" secondAttribute="trailing" id="eHr-iw-Kln"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="118" height="96"/>
+            <connections>
+                <outlet property="imgVwCategory" destination="6Fn-4I-meu" id="HlZ-G2-YgI"/>
+                <outlet property="lblTitle" destination="Hvx-wx-slK" id="ISj-MQ-gfj"/>
+            </connections>
+            <point key="canvasLocation" x="-79.710144927536234" y="91.741071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_fruit" width="56.5" height="56.5"/>
+    </resources>
+</document>

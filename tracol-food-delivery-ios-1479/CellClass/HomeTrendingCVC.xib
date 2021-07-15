@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeTrendingCVC" id="gTV-IL-0wX" customClass="HomeTrendingCVC" customModule="Tracol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhu-LZ-YFk">
+                        <rect key="frame" x="0.0" y="0.0" width="367" height="264"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88G-VS-kXV">
+                                <rect key="frame" x="10" y="10" width="347" height="249"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_img3" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-1A-uDZ">
+                                        <rect key="frame" x="10" y="10" width="327" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="190" id="GSC-Ie-Mzl"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.10000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair Loss Fruit Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-9R-Zfo">
+                                        <rect key="frame" x="20" y="205" width="317" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-Bh-IcF">
+                                        <rect key="frame" x="148.5" y="80" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="8Yw-5X-Mpw"/>
+                                            <constraint firstAttribute="height" constant="50" id="ziN-QO-aro"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_play"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="XSR-9R-Zfo" firstAttribute="leading" secondItem="88G-VS-kXV" secondAttribute="leading" constant="20" id="2ug-w7-tBH"/>
+                                    <constraint firstAttribute="trailing" secondItem="qaH-1A-uDZ" secondAttribute="trailing" constant="10" id="9eA-kY-2GS"/>
+                                    <constraint firstItem="XSR-9R-Zfo" firstAttribute="top" secondItem="qaH-1A-uDZ" secondAttribute="bottom" constant="5" id="GDr-gY-gKF"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XSR-9R-Zfo" secondAttribute="bottom" constant="5" id="ULq-C1-DrW"/>
+                                    <constraint firstItem="qaH-1A-uDZ" firstAttribute="leading" secondItem="88G-VS-kXV" secondAttribute="leading" constant="10" id="cvG-07-edl"/>
+                                    <constraint firstItem="h7E-Bh-IcF" firstAttribute="centerY" secondItem="qaH-1A-uDZ" secondAttribute="centerY" id="fPZ-57-Rcv"/>
+                                    <constraint firstAttribute="trailing" secondItem="XSR-9R-Zfo" secondAttribute="trailing" constant="10" id="fzr-5o-ftx"/>
+                                    <constraint firstItem="h7E-Bh-IcF" firstAttribute="centerX" secondItem="qaH-1A-uDZ" secondAttribute="centerX" id="lPk-vi-UGW"/>
+                                    <constraint firstItem="qaH-1A-uDZ" firstAttribute="top" secondItem="88G-VS-kXV" secondAttribute="top" constant="10" id="oPe-F4-EYa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.29999999999999999" height="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95372158288955688" green="0.95667999982833862" blue="0.97382789850234985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="88G-VS-kXV" firstAttribute="leading" secondItem="Fhu-LZ-YFk" secondAttribute="leading" constant="10" id="3Xy-5C-EVE"/>
+                            <constraint firstItem="88G-VS-kXV" firstAttribute="top" secondItem="Fhu-LZ-YFk" secondAttribute="top" constant="10" id="c69-FH-rW6"/>
+                            <constraint firstAttribute="trailing" secondItem="88G-VS-kXV" secondAttribute="trailing" constant="10" id="oJi-Gq-l0Y"/>
+                            <constraint firstAttribute="bottom" secondItem="88G-VS-kXV" secondAttribute="bottom" constant="5" id="uQE-hx-UVj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Fhu-LZ-YFk" secondAttribute="trailing" id="2k7-Qi-ANV"/>
+                <constraint firstAttribute="bottom" secondItem="Fhu-LZ-YFk" secondAttribute="bottom" id="39T-2w-afa"/>
+                <constraint firstItem="Fhu-LZ-YFk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8H0-S8-zbr"/>
+                <constraint firstItem="Fhu-LZ-YFk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kRM-n2-k1H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="367" height="264"/>
+            <connections>
+                <outlet property="btnPlayVideo" destination="h7E-Bh-IcF" id="Ud6-Vd-CMc"/>
+                <outlet property="imgViewVideo" destination="qaH-1A-uDZ" id="tsg-BD-pdH"/>
+                <outlet property="lblTitle" destination="XSR-9R-Zfo" id="qib-am-VXO"/>
+            </connections>
+            <point key="canvasLocation" x="105.07246376811595" y="133.92857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_img3" width="397.5" height="195.5"/>
+        <image name="ic_play" width="73.5" height="73.5"/>
+    </resources>
+</document>
